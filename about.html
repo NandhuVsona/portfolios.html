@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    #hamburger{
+      overflow: hidden !important;
+    }
+    html{
+      overflow: auto;
+    }
+
+     
+   
+
+    #content1 {
+      margin: 60px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -11;
+      box-sizing: border-box;
+    }
+
+    .profil {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+      padding:5px  10px;
+      overflow: hidden;
+
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      flex-grow: 1;
+      gap: 5px;
+      
+
+    }
+
+    .img {
+      border-radius: 50%;
+      border: 2px solid rgb(255, 0, 149);
+      padding: 5px;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .details>p,
+    .details-2>pre {
+      font-size: 16px;
+    }
+
+    .details-2>div {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .details-2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0px 10px;
+    }
+
+    .button {
+      display: flex;
+      gap: 30px;
+      width: 100%;
+      padding: 0px 10px;
+    }
+
+    .button>button {
+      font-size: 16px;
+      flex-grow: 1;
+      padding: 5px 30px;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      font-weight: bold;
+    }
+
+    .button>.sec {
+      background-color: rgb(186, 185, 182);
+      color: black;
+    }
+
+    .header {
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0px 0px 10px 0px;
+      padding: 2px 10px;
+    }
+
+    .mine {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .title>p {
+      font-size: 16px;
+    }
+
+    .nested {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title>p+.small {
+      font-size: 12px;
+    }
+
+    .header>button {
+      width: 80px;
+      font-size: 16px;
+      border: none;
+      background-color: blue;
+      color: white;
+      padding: 5px 3px;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    video {
+      width: 100%;
+      padding: 0px !important;
+      margin: 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Color Flipper</h2>
+    <input type="checkbox" id="input">
+    <div id="hamburger">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+  </header>
+  <section>
+    <ol id="dropdown">
+      <li class="one"><a href="dropdown.html">Home</a></li>
+      <li class="two"><a href="">Projects</a></li>
+      <li class="three"><a href="contact.html">Contact</a></li>
+      <li class="four"><a href="">Destination</a></li>
+      <li class="five"><a href="#">About</a></li>
+    </ol>
+  </section>
+  <article>
+    <div id="content1">
+      <div class="profil">
+        <img class="img" src="insta.jpg" alt="">
+        <div class="details">
+          <p>0110</p>
+          <p>Posts</p>
+        </div>
+        <div class="details">
+          <p>10101</p>
+          <p>Followers</p>
+        </div>
+        <div class="details">
+          <p>01011</p>
+          <p>Following</p>
+        </div>
+
+      </div>
+      <div class="details-2">
+        <div>Naveen V</div>
+        <pre>let Life = "Depression"
+Switch(Life) {
+    case 'Depression':
+          console.log('Go to code')
+    case 'Happy':
+          console.log('Go to code')   
+}
+        </pre>
+        <div class="button">
+          <button>Follow</button>
+          <button class="sec">Message</button>
+        </div>
+      </div>
+      <hr>
+      <div class="cards">
+        <div class="life">
+          <div class="header">
+            <div class="nested">
+              <img class="mine" src="myinage.jpg" alt="">
+              <div class="title">
+                <p>Naveen</p>
+                <p class="small">Posted a New Video....</p>
+              </div>
+            </div>
+            <button>Follow</button>
+          </div>
+          <div class="video">
+            <video src="love.mp4" poster="" controls></video>
+            <div class="like">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <script src="script.js" text="Javascript"></script>
+</body>
+
+</html>
